@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh"
+        content="0;url=search.php<?php echo isset($_SERVER['QUERY_STRING']) ? '?' . $_SERVER['QUERY_STRING'] : ''; ?>">
+    <title>Redirecting...</title>
+    <script>
+        // Javascript fallback if meta refresh fails or for preserving query params properly
+        window.location.href = "search.php" + window.location.search;
+    </script>
+</head>
+
+<body>
+    <p>Redirecting to <a href="search.php">search results</a>...</p>
+</body>
+
+</html>

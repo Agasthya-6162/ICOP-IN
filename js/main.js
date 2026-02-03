@@ -262,7 +262,7 @@ function initSearch() {
             if (query) {
                 // Implement search functionality
                 // This is a placeholder - implement actual search
-                window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+                window.location.href = `search.php?q=${encodeURIComponent(query)}`;
             }
         });
 

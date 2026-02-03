@@ -37,6 +37,8 @@ define('GALLERY_DIR', UPLOAD_DIR . 'gallery/');
 define('NOTICE_DIR', UPLOAD_DIR . 'notices/');
 define('RESULT_DIR', UPLOAD_DIR . 'results/');
 define('APPLICATION_DIR', UPLOAD_DIR . 'applications/');
+define('SYLLABUS_DIR', UPLOAD_DIR . 'syllabus/');
+define('EXAM_DIR', UPLOAD_DIR . 'examinations/');
 
 // Maximum file sizes (in bytes)
 define('MAX_IMAGE_SIZE', 5 * 1024 * 1024);    // 5MB
@@ -78,11 +80,13 @@ date_default_timezone_set('Asia/Kolkata');
 // DATABASE CONNECTION CLASS
 // ============================================
 
-class Database {
+class Database
+{
     private static $instance = null;
     private $conn;
-    
-    private function __construct() {
+
+    private function __construct()
+    {
         try {
             $this->conn = new PDO(
                 "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET,
@@ -94,10 +98,10 @@ class Database {
                     PDO::ATTR_EMULATE_PREPARES => false
                 ]
             );
-        } catch(PDOException $e) {
+        } catch (PDOException $e) {
             // Log error
             error_log("Database Connection Error: " . $e->getMessage());
-            
+
             // If in debug mode, show error
             if (defined('DEBUG_MODE') && DEBUG_MODE) {
                 die("Database Connection Error: " . $e->getMessage());
@@ -107,23 +111,28 @@ class Database {
             }
         }
     }
-    
-    public static function getInstance() {
+
+    public static function getInstance()
+    {
         if (self::$instance === null) {
             self::$instance = new self();
         }
         return self::$instance;
     }
-    
-    public function getConnection() {
+
+    public function getConnection()
+    {
         return $this->conn;
     }
-    
+
     // Prevent cloning
-    private function __clone() {}
-    
+    private function __clone()
+    {
+    }
+
     // Prevent unserialization
-    public function __wakeup() {
+    public function __wakeup()
+    {
         throw new Exception("Cannot unserialize singleton");
     }
 }
@@ -135,7 +144,8 @@ class Database {
 /**
  * Sanitize user input
  */
-function sanitize($data) {
+function sanitize($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
@@ -145,7 +155,8 @@ function sanitize($data) {
 /**
  * Generate unique reference number
  */
-function generateReferenceNumber($prefix = 'ICOP') {
+function generateReferenceNumber($prefix = 'ICOP')
+{
     $year = date('Y');
     $random = str_pad(mt_rand(1, 999999), 6, '0', STR_PAD_LEFT);
     return $prefix . $year . '-' . $random;
@@ -154,52 +165,54 @@ function generateReferenceNumber($prefix = 'ICOP') {
 /**
  * Handle file upload
  */
-function uploadFile($file, $destination, $allowedTypes, $maxSize) {
+function uploadFile($file, $destination, $allowedTypes, $maxSize)
+{
     if (!isset($file['error']) || is_array($file['error'])) {
         return ['success' => false, 'message' => 'Invalid file upload'];
     }
-    
+
     // Check for upload errors
     if ($file['error'] !== UPLOAD_ERR_OK) {
         return ['success' => false, 'message' => 'Upload error code: ' . $file['error']];
     }
-    
+
     // Check file size
     if ($file['size'] > $maxSize) {
         return ['success' => false, 'message' => 'File size exceeds maximum allowed'];
     }
-    
+
     // Check file type
     $finfo = finfo_open(FILEINFO_MIME_TYPE);
     $mimeType = finfo_file($finfo, $file['tmp_name']);
     finfo_close($finfo);
-    
+
     if (!in_array($mimeType, $allowedTypes)) {
         return ['success' => false, 'message' => 'Invalid file type'];
     }
-    
+
     // Generate unique filename
     $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
     $filename = uniqid() . '_' . time() . '.' . $extension;
     $filepath = $destination . $filename;
-    
+
     // Create directory if it doesn't exist
     if (!is_dir($destination)) {
         mkdir($destination, 0755, true);
     }
-    
+
     // Move file
     if (!move_uploaded_file($file['tmp_name'], $filepath)) {
         return ['success' => false, 'message' => 'Failed to move uploaded file'];
     }
-    
+
     return ['success' => true, 'filename' => $filename, 'filepath' => $filepath];
 }
 
 /**
  * Send JSON response
  */
-function sendJSON($data, $statusCode = 200) {
+function sendJSON($data, $statusCode = 200)
+{
     http_response_code($statusCode);
     header('Content-Type: application/json');
     echo json_encode($data);
@@ -209,7 +222,8 @@ function sendJSON($data, $statusCode = 200) {
 /**
  * Check if user is logged in (admin)
  */
-function isLoggedIn() {
+function isLoggedIn()
+{
     session_start();
     return isset($_SESSION[ADMIN_SESSION_NAME]) && $_SESSION[ADMIN_SESSION_NAME] === true;
 }
@@ -217,7 +231,8 @@ function isLoggedIn() {
 /**
  * Require login
  */
-function requireLogin() {
+function requireLogin()
+{
     if (!isLoggedIn()) {
         header('Location: ../admin/index.php');
         exit;
@@ -227,16 +242,17 @@ function requireLogin() {
 /**
  * Log activity
  */
-function logActivity($action, $tableName = null, $recordId = null) {
+function logActivity($action, $tableName = null, $recordId = null)
+{
     try {
         $db = Database::getInstance()->getConnection();
         $userId = $_SESSION['admin_user_id'] ?? null;
-        
+
         $stmt = $db->prepare("
             INSERT INTO activity_log (user_id, action, table_name, record_id, ip_address, user_agent) 
             VALUES (?, ?, ?, ?, ?, ?)
         ");
-        
+
         $stmt->execute([
             $userId,
             $action,
@@ -245,7 +261,7 @@ function logActivity($action, $tableName = null, $recordId = null) {
             $_SERVER['REMOTE_ADDR'] ?? null,
             $_SERVER['HTTP_USER_AGENT'] ?? null
         ]);
-    } catch(PDOException $e) {
+    } catch (PDOException $e) {
         // Silently fail - don't break the application
         if (DEBUG_MODE) {
             error_log("Activity log error: " . $e->getMessage());
@@ -256,14 +272,15 @@ function logActivity($action, $tableName = null, $recordId = null) {
 /**
  * Get website setting
  */
-function getSetting($key, $default = '') {
+function getSetting($key, $default = '')
+{
     try {
         $db = Database::getInstance()->getConnection();
         $stmt = $db->prepare("SELECT setting_value FROM website_settings WHERE setting_key = ?");
         $stmt->execute([$key]);
         $result = $stmt->fetch();
         return $result ? $result['setting_value'] : $default;
-    } catch(PDOException $e) {
+    } catch (PDOException $e) {
         return $default;
     }
 }
@@ -271,7 +288,8 @@ function getSetting($key, $default = '') {
 /**
  * Update website setting
  */
-function updateSetting($key, $value) {
+function updateSetting($key, $value)
+{
     try {
         $db = Database::getInstance()->getConnection();
         $stmt = $db->prepare("
@@ -281,7 +299,7 @@ function updateSetting($key, $value) {
         ");
         $stmt->execute([$key, $value, $value]);
         return true;
-    } catch(PDOException $e) {
+    } catch (PDOException $e) {
         return false;
     }
 }

@@ -8,10 +8,13 @@
                     <p>Indira College of Pharmacy is dedicated to pharmaceutical education and research, nurturing
                         future leaders in healthcare.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/1FhHK4NfrX/" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/indira-college-of-pharmacy-vishnupuri-nanded/"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/sahyog_campus?igsh=MTVjc2p2c3huZzRheg=="
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -84,10 +87,13 @@
 </footer>
 
 <div class="floating-social">
-    <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.facebook.com/share/1FhHK4NfrX/" class="social-btn facebook"><i
+            class="fab fa-facebook-f"></i></a>
     <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/school/indira-college-of-pharmacy-vishnupuri-nanded/"
+        class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/sahyog_campus?igsh=MTVjc2p2c3huZzRheg==" class="social-btn instagram"><i
+            class="fab fa-instagram"></i></a>
 </div>
 
 <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
