@@ -44,7 +44,8 @@ include 'includes/header.php';
 
                 <!-- NAAC Collapsible Toggle Section -->
                 <div class="naac-toggle-section" id="naac">
-                    <div class="naac-toggle-header" onclick="toggleNAAC()">
+                    <div class="naac-toggle-header" onclick="toggleNAAC()"
+                        style="background: linear-gradient(135deg, var(--accent-blue) 0%, var(--secondary-blue) 100%);">
                         <div>
                             <h3 class="naac-toggle-title">
                                 <i class="fas fa-award"></i>
@@ -170,8 +171,10 @@ include 'includes/header.php';
                         of India</li>
                     <li style="margin-bottom: 10px;"><strong>AICTE Approved</strong> - All India Council for
                         Technical Education</li>
-                    <li style="margin-bottom: 10px;"><strong>University Affiliated</strong> - Savitribai Phule Pune
-                        University</li>
+                    <li style="margin-bottom: 10px;"><strong>University Affiliated</strong> - Swami Ramanand Teerth
+                        Marathwada University Nanded</li>
+                    <li style="margin-bottom: 10px;"><strong>Hospital Tie-up</strong> - Dr. Shankarrao Chavan Medical
+                        College And Hospital, Vishnupuri, Nanded</li>
                 </ul>
 
                 <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Why

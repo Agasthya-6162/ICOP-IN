@@ -249,14 +249,15 @@ include 'includes/header.php';
                 <div
                     style="background: var(--light-blue); padding: 25px; border-radius: 6px; border-left: 4px solid var(--accent-blue);">
                     <p style="margin-bottom: 15px;"><i class="fas fa-phone"
-                            style="color: var(--orange-accent); margin-right: 10px;"></i> <strong>Phone:</strong>
-                        +91-20-1234-5679</p>
+                            style="color: var(--orange-accent); margin-right: 10px;"></i> <strong>Admission Contact (Dr.
+                            S.B Jadhav):</strong>
+                        +91 9421278483</p>
                     <p style="margin-bottom: 15px;"><i class="fas fa-envelope"
                             style="color: var(--orange-accent); margin-right: 10px;"></i> <strong>Email:</strong>
-                        <a href="mailto:admissions@icop.edu.in">admissions@icop.edu.in</a>
+                        <a href="mailto:admissions@sssicop.org">admissions@sssicop.org</a>
                     </p>
                     <p><i class="fas fa-map-marker-alt" style="color: var(--orange-accent); margin-right: 10px;"></i>
-                        <strong>Address:</strong> Indira College of Pharmacy, Hinjewadi, Pune - 411057
+                        <strong>Address:</strong> Indira College of Pharmacy, Vishnupuri, Nanded - 431606
                     </p>
                 </div>
             </div>

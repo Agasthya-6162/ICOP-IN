@@ -29,44 +29,38 @@ include 'includes/header.php';
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Address</h3>
+                            <h3>Our Location</h3>
                             <p>
                                 Indira College of Pharmacy<br>
-                                Near Rajiv Gandhi Infotech Park,<br>
-                                Hinjewadi, Pune - 411057,<br>
+                                Vishnupuri, Nanded - 431606,<br>
                                 Maharashtra, India
                             </p>
                         </div>
                     </div>
-
                     <div class="contact-detail">
                         <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Phone</h3>
+                            <h3>Phone Number</h3>
                             <p>
-                                Main Office: <a href="tel:+912012345678">+91-20-1234-5678</a><br>
-                                Admissions: <a href="tel:+912012345679">+91-20-1234-5679</a><br>
-                                Accounts: <a href="tel:+912012345680">+91-20-1234-5680</a>
+                                Office: <a href="tel:+919673421313">+91 9673421313</a><br>
+                                Principal: <a href="tel:+919975621979">+91 9975621979</a>
                             </p>
                         </div>
                     </div>
-
                     <div class="contact-detail">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Email</h3>
+                            <h3>Email Address</h3>
                             <p>
-                                General: <a href="mailto:info@icop.edu.in">info@icop.edu.in</a><br>
-                                Admissions: <a href="mailto:admissions@icop.edu.in">admissions@icop.edu.in</a><br>
-                                Principal: <a href="mailto:principal@icop.edu.in">principal@icop.edu.in</a>
+                                <a href="mailto:info@sssicop.org">info@sssicop.org</a><br>
+                                <a href="mailto:admissions@sssicop.org">admissions@sssicop.org</a>
                             </p>
                         </div>
                     </div>
-
                     <div class="contact-detail">
                         <div class="contact-icon">
                             <i class="fas fa-clock"></i>
@@ -74,9 +68,8 @@ include 'includes/header.php';
                         <div class="contact-text">
                             <h3>Office Hours</h3>
                             <p>
-                                Monday - Friday: 9:00 AM - 5:00 PM<br>
-                                Saturday: 9:00 AM - 1:00 PM<br>
-                                Sunday & Holidays: Closed
+                                Mon - Sat: 9:00 AM - 5:00 PM<br>
+                                Sunday: Closed
                             </p>
                         </div>
                     </div>
@@ -126,44 +119,32 @@ include 'includes/header.php';
                 </div>
             </div>
 
-            <!-- Department Contacts -->
+            <!-- Key Contact Persons -->
             <div class="department-contacts">
-                <h2>Department Contacts</h2>
+                <h2>Key Contact Persons</h2>
                 <div class="dept-grid">
                     <div class="dept-card">
-                        <h3>Admissions Office</h3>
-                        <p><i class="fas fa-phone"></i> +91-20-1234-5679</p>
-                        <p><i class="fas fa-envelope"></i> admissions@icop.edu.in</p>
+                        <h3>Admission Contact</h3>
+                        <p class="person-name">Dr. S.B Jadhav</p>
+                        <a href="tel:+919421278483" class="phone-link"><i class="fas fa-phone"></i> +91 9421278483</a>
                     </div>
 
                     <div class="dept-card">
-                        <h3>Examination Cell</h3>
-                        <p><i class="fas fa-phone"></i> +91-20-1234-5681</p>
-                        <p><i class="fas fa-envelope"></i> exams@icop.edu.in</p>
+                        <h3>Office / Accounts</h3>
+                        <p class="person-name">Mr. Rameshwar Panchal</p>
+                        <a href="tel:+919673421313" class="phone-link"><i class="fas fa-phone"></i> +91 9673421313</a>
                     </div>
 
                     <div class="dept-card">
-                        <h3>Library</h3>
-                        <p><i class="fas fa-phone"></i> +91-20-1234-5682</p>
-                        <p><i class="fas fa-envelope"></i> library@icop.edu.in</p>
+                        <h3>Scholarship Department</h3>
+                        <p class="person-name">Mr. Y.B Thakur</p>
+                        <a href="tel:+919960707951" class="phone-link"><i class="fas fa-phone"></i> +91 9960707951</a>
                     </div>
 
                     <div class="dept-card">
-                        <h3>Accounts Office</h3>
-                        <p><i class="fas fa-phone"></i> +91-20-1234-5680</p>
-                        <p><i class="fas fa-envelope"></i> accounts@icop.edu.in</p>
-                    </div>
-
-                    <div class="dept-card">
-                        <h3>Research & Development</h3>
-                        <p><i class="fas fa-phone"></i> +91-20-1234-5683</p>
-                        <p><i class="fas fa-envelope"></i> research@icop.edu.in</p>
-                    </div>
-
-                    <div class="dept-card">
-                        <h3>Placement Cell</h3>
-                        <p><i class="fas fa-phone"></i> +91-20-1234-5684</p>
-                        <p><i class="fas fa-envelope"></i> placements@icop.edu.in</p>
+                        <h3>Principal Office</h3>
+                        <p class="person-name">Principal</p>
+                        <a href="tel:+919975621979" class="phone-link"><i class="fas fa-phone"></i> +91 9975621979</a>
                     </div>
                 </div>
             </div>
@@ -172,8 +153,7 @@ include 'includes/header.php';
             <div class="map-section">
                 <h2>Location Map</h2>
                 <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.455209355682!2d77.29447337507925!3d19.175338982049615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d66bb9d31721%3A0x4386266050b4356e!2sIndira%20College%20of%20Pharmacy%2C%20Nanded!5e0!3m2!1sen!2sin!4v1706606000000!5m2!1sen!2sin"
+                    <iframe src="https://maps.google.com/maps?q=19.116834752813357,77.29190685873034&z=15&output=embed"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
