@@ -1,0 +1,34 @@
+# Disable directory browsing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(sql|log|ini|env|sh)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "database.sql">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Protect includes directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^includes/ - [F,L]
+    RewriteRule ^backend/database/ - [F,L]
+</IfModule>
+
+# Custom Error Pages (Optional)
+# ErrorDocument 404 /404.php
+# ErrorDocument 403 /403.php

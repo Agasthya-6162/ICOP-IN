@@ -1,0 +1,18 @@
+ICOP Admin - Two-Factor Authentication Backup Codes
+Generated: 2026-02-02 18:56:09
+Username: ```ICOP@731
+
+IMPORTANT: Keep these codes in a secure location.
+Each code can only be used once.
+
+Backup Codes:
+0106-D61C
+7CCA-C43B
+6C42-1BDC
+ADEA-841A
+DAD7-FF83
+B97E-4809
+0F1B-B7EF
+3FBC-9CE3
+B4C4-A95C
+5689-A061

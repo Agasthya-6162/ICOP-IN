@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://icop.edu.in/sitemap.xml
