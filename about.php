@@ -16,28 +16,30 @@ include 'includes/header.php';
     </div>
 </div>
 
-<main id="main-content" style="padding: 60px 0; background: #f5f5f5;">
+<main id="main-content" style="padding: 60px 0; background: var(--light-gray);">
     <div class="container">
         <div style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             <h1
-                style="color: #003366; font-size: 2.5rem; margin-bottom: 20px; border-bottom: 4px solid #FF6B35; padding-bottom: 15px;">
+                style="color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 20px; border-bottom: 4px solid var(--orange-accent); padding-bottom: 15px;">
                 About Indira College of Pharmacy</h1>
 
-            <div style="line-height: 1.8; color: #2C3E50;">
+            <div style="line-height: 1.8; color: var(--text-primary);">
                 <p style="font-size: 1.1rem; margin-bottom: 20px;">Indira College of Pharmacy (ICOP) stands as a
                     beacon of excellence in pharmaceutical education and research. Established with the vision of
                     producing competent pharmacy professionals who can contribute significantly to the healthcare
                     sector, our institution has been consistently delivering quality education for over two decades.
                 </p>
 
-                <h2 style="color: #003366; font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Our Legacy
+                <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Our
+                    Legacy
                 </h2>
                 <p style="margin-bottom: 20px;">Founded in 2008, Indira College of Pharmacy has grown from a modest
                     institution to one of the most respected pharmacy colleges in Maharashtra. Our journey has been
                     marked by continuous innovation in teaching methodologies, research initiatives, and industry
                     collaborations.</p>
 
-                <h2 style="color: #003366; font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Accreditations
+                <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">
+                    Accreditations
                     & Recognitions</h2>
 
                 <!-- NAAC Collapsible Toggle Section -->
@@ -81,7 +83,8 @@ include 'includes/header.php';
                         <!-- Certificates -->
                         <div class="naac-certificates">
                             <h3><i class="fas fa-certificate"
-                                    style="margin-right: 10px; color: #667eea;"></i>Accreditation Certificates</h3>
+                                    style="margin-right: 10px; color: var(--accent-blue);"></i>Accreditation
+                                Certificates</h3>
                             <div class="certificate-grid">
                                 <div class="certificate-card" onclick="openCertificate('images/naac-certificate.jpg')">
                                     <img src="images/naac-certificate.jpg" alt="NAAC Certificate of Accreditation">
@@ -103,7 +106,8 @@ include 'includes/header.php';
 
                         <!-- Quality Criteria -->
                         <div class="naac-criteria">
-                            <h3><i class="fas fa-tasks" style="margin-right: 10px; color: #667eea;"></i>Seven Quality
+                            <h3><i class="fas fa-tasks" style="margin-right: 10px; color: var(--accent-blue);"></i>Seven
+                                Quality
                                 Criteria</h3>
                             <div class="criteria-grid">
                                 <div class="criteria-item">
@@ -139,7 +143,7 @@ include 'includes/header.php';
 
                         <!-- About NAAC -->
                         <div
-                            style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white;">
+                            style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, var(--accent-blue) 0%, var(--secondary-blue) 100%); border-radius: 8px; color: white;">
                             <h3 style="color: white; margin-bottom: 15px;"><i class="fas fa-info-circle"
                                     style="margin-right: 10px;"></i>About NAAC</h3>
                             <p style="margin-bottom: 10px; line-height: 1.8;">
@@ -156,7 +160,8 @@ include 'includes/header.php';
                     </div>
                 </div>
 
-                <h2 style="color: #003366; font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Other Recognitions
+                <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Other
+                    Recognitions
                 </h2>
                 <ul style="margin-left: 30px; margin-bottom: 20px;">
                     <li style="margin-bottom: 10px;"><strong>NAAC A+ Grade</strong> - Accredited by National
@@ -169,37 +174,40 @@ include 'includes/header.php';
                         University</li>
                 </ul>
 
-                <h2 style="color: #003366; font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Why Choose
+                <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Why
+                    Choose
                     ICOP?</h2>
                 <div
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
                     <div
-                        style="background: #E8F4F8; padding: 20px; border-radius: 6px; border-left: 4px solid #0066CC;">
-                        <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-chalkboard-teacher"
-                                style="color: #0066CC; margin-right: 10px;"></i>Expert Faculty</h3>
+                        style="background: var(--light-blue); padding: 20px; border-radius: 6px; border-left: 4px solid var(--accent-blue);">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 10px;"><i
+                                class="fas fa-chalkboard-teacher"
+                                style="color: var(--accent-blue); margin-right: 10px;"></i>Expert Faculty</h3>
                         <p>Highly qualified professors with Ph.D. and industry experience</p>
                     </div>
                     <div
-                        style="background: #E8F4F8; padding: 20px; border-radius: 6px; border-left: 4px solid #0066CC;">
-                        <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-microscope"
-                                style="color: #0066CC; margin-right: 10px;"></i>Modern Labs</h3>
+                        style="background: var(--light-blue); padding: 20px; border-radius: 6px; border-left: 4px solid var(--accent-blue);">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 10px;"><i class="fas fa-microscope"
+                                style="color: var(--accent-blue); margin-right: 10px;"></i>Modern Labs</h3>
                         <p>State-of-the-art laboratories with latest equipment</p>
                     </div>
                     <div
-                        style="background: #E8F4F8; padding: 20px; border-radius: 6px; border-left: 4px solid #0066CC;">
-                        <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-briefcase"
-                                style="color: #0066CC; margin-right: 10px;"></i>100% Placements</h3>
+                        style="background: var(--light-blue); padding: 20px; border-radius: 6px; border-left: 4px solid var(--accent-blue);">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 10px;"><i class="fas fa-briefcase"
+                                style="color: var(--accent-blue); margin-right: 10px;"></i>100% Placements</h3>
                         <p>Strong industry connections ensuring career success</p>
                     </div>
                     <div
-                        style="background: #E8F4F8; padding: 20px; border-radius: 6px; border-left: 4px solid #0066CC;">
-                        <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-book-open"
-                                style="color: #0066CC; margin-right: 10px;"></i>Research Focus</h3>
+                        style="background: var(--light-blue); padding: 20px; border-radius: 6px; border-left: 4px solid var(--accent-blue);">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 10px;"><i class="fas fa-book-open"
+                                style="color: var(--accent-blue); margin-right: 10px;"></i>Research Focus</h3>
                         <p>Active research programs and publications</p>
                     </div>
                 </div>
 
-                <h2 style="color: #003366; font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Our Commitment
+                <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Our
+                    Commitment
                 </h2>
                 <p style="margin-bottom: 20px;">At ICOP, we are committed to:</p>
                 <ul style="margin-left: 30px; margin-bottom: 20px;">
@@ -212,7 +220,8 @@ include 'includes/header.php';
 
                 <!-- Secretary Section with anchor -->
                 <div id="secretary" style="scroll-margin-top: 100px;">
-                    <h2 style="color: #003366; font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">Secretary's
+                    <h2 style="color: var(--primary-blue); font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px;">
+                        Secretary's
                         Message</h2>
                     <p style="margin-bottom: 20px;"><strong>Dr. Santukrao Hambarde</strong>, Secretary of Sahayog
                         Sevabhavi Sanstha</p>
@@ -240,47 +249,47 @@ include 'includes/header.php';
 </div>
 
 <script>
-// Toggle NAAC Section
-function toggleNAAC() {
-    const section = document.querySelector('.naac-toggle-section');
-    section.classList.toggle('active');
-}
-
-// Open Certificate in Modal
-function openCertificate(imageSrc) {
-    const modal = document.getElementById('certificateModal');
-    const modalImg = document.getElementById('modalImage');
-    modalImg.src = imageSrc;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
-}
-
-// Close Certificate Modal
-function closeCertificate() {
-    const modal = document.getElementById('certificateModal');
-    modal.classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
-}
-
-// Close modal on Escape key
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        closeCertificate();
-    }
-});
-
-// Auto-expand NAAC section if URL has #naac
-window.addEventListener('DOMContentLoaded', function() {
-    if (window.location.hash === '#naac') {
+    // Toggle NAAC Section
+    function toggleNAAC() {
         const section = document.querySelector('.naac-toggle-section');
-        section.classList.add('active');
-        
-        // Smooth scroll to section
-        setTimeout(function() {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
+        section.classList.toggle('active');
     }
-});
+
+    // Open Certificate in Modal
+    function openCertificate(imageSrc) {
+        const modal = document.getElementById('certificateModal');
+        const modalImg = document.getElementById('modalImage');
+        modalImg.src = imageSrc;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    // Close Certificate Modal
+    function closeCertificate() {
+        const modal = document.getElementById('certificateModal');
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeCertificate();
+        }
+    });
+
+    // Auto-expand NAAC section if URL has #naac
+    window.addEventListener('DOMContentLoaded', function () {
+        if (window.location.hash === '#naac') {
+            const section = document.querySelector('.naac-toggle-section');
+            section.classList.add('active');
+
+            // Smooth scroll to section
+            setTimeout(function () {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+    });
 </script>
 
 <?php include 'includes/footer.php'; ?>

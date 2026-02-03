@@ -192,7 +192,8 @@ include 'includes/header.php';
 
     .hero-icon {
         font-size: 3.5rem;
-        color: var(--orange-accent); /* Changed to accent color for better visibility/contrast like cards */
+        color: var(--orange-accent);
+        /* Changed to accent color for better visibility/contrast like cards */
         margin-bottom: 20px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
@@ -200,13 +201,13 @@ include 'includes/header.php';
     .contact-hero h1 {
         font-size: 2.5rem;
         margin-bottom: 15px;
-        color: #FFFFFF !important;
+        color: var(--white) !important;
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .contact-hero p {
-        color: #FFFFFF !important;
+        color: var(--white) !important;
         font-size: 1.2rem;
         opacity: 0.95;
     }

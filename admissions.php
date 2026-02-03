@@ -16,7 +16,8 @@ include 'includes/header.php';
         <div class="container">
             <div class="content-box">
                 <h2>Admission Open for Academic Year 2026-27</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; color: #2C3E50;">Indira College of Pharmacy invites
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-primary);">Indira College of Pharmacy
+                    invites
                     applications from eligible candidates for admission to various undergraduate and postgraduate
                     pharmacy programs. We are committed to providing quality education and producing competent
                     pharmacy professionals.</p>
@@ -47,7 +48,7 @@ include 'includes/header.php';
                 <div style="text-align: center;">
                     <a href="apply-online.php" class="cta-button"><i class="fas fa-file-alt"></i> Apply Online
                         Now</a>
-                    <a href="#" class="cta-button" style="background: #0066CC; margin-left: 15px;"><i
+                    <a href="#" class="cta-button" style="background: var(--accent-blue); margin-left: 15px;"><i
                             class="fas fa-download"></i> Download Prospectus</a>
                 </div>
             </div>
@@ -180,7 +181,8 @@ include 'includes/header.php';
                         </tr>
                     </tbody>
                 </table>
-                <p style="font-style: italic; color: #5A6C7D; margin-top: 10px;">*Fees subject to change. Other
+                <p style="font-style: italic; color: var(--text-secondary); margin-top: 10px;">*Fees subject to change.
+                    Other
                     charges include library, laboratory, sports, and examination fees.</p>
             </div>
 
@@ -244,15 +246,16 @@ include 'includes/header.php';
 
             <div class="content-box">
                 <h2>Contact Admission Office</h2>
-                <div style="background: #E8F4F8; padding: 25px; border-radius: 6px; border-left: 4px solid #0066CC;">
+                <div
+                    style="background: var(--light-blue); padding: 25px; border-radius: 6px; border-left: 4px solid var(--accent-blue);">
                     <p style="margin-bottom: 15px;"><i class="fas fa-phone"
-                            style="color: #FF6B35; margin-right: 10px;"></i> <strong>Phone:</strong>
+                            style="color: var(--orange-accent); margin-right: 10px;"></i> <strong>Phone:</strong>
                         +91-20-1234-5679</p>
                     <p style="margin-bottom: 15px;"><i class="fas fa-envelope"
-                            style="color: #FF6B35; margin-right: 10px;"></i> <strong>Email:</strong>
+                            style="color: var(--orange-accent); margin-right: 10px;"></i> <strong>Email:</strong>
                         <a href="mailto:admissions@icop.edu.in">admissions@icop.edu.in</a>
                     </p>
-                    <p><i class="fas fa-map-marker-alt" style="color: #FF6B35; margin-right: 10px;"></i>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--orange-accent); margin-right: 10px;"></i>
                         <strong>Address:</strong> Indira College of Pharmacy, Hinjewadi, Pune - 411057
                     </p>
                 </div>
@@ -272,20 +275,20 @@ include 'includes/header.php';
     .admission-hero h1 {
         font-size: 2.5rem;
         margin-bottom: 15px;
-        color: #FFFFFF !important;
+        color: var(--white) !important;
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .admission-hero p {
-        color: #FFFFFF !important;
+        color: var(--white) !important;
         font-size: 1.2rem;
         opacity: 0.95;
     }
 
     .content-section {
         padding: 60px 0;
-        background: #f5f5f5;
+        background: var(--light-gray);
     }
 
     .content-box {
@@ -297,30 +300,30 @@ include 'includes/header.php';
     }
 
     .content-box h2 {
-        color: #003366;
+        color: var(--primary-blue);
         font-size: 2rem;
         margin-bottom: 20px;
-        border-bottom: 4px solid #FF6B35;
+        border-bottom: 4px solid var(--orange-accent);
         padding-bottom: 15px;
     }
 
     .content-box h3 {
-        color: #003366;
+        color: var(--primary-blue);
         font-size: 1.5rem;
         margin-top: 30px;
         margin-bottom: 15px;
     }
 
     .program-card {
-        background: #E8F4F8;
+        background: var(--light-blue);
         padding: 25px;
         border-radius: 6px;
         margin-bottom: 20px;
-        border-left: 4px solid #0066CC;
+        border-left: 4px solid var(--accent-blue);
     }
 
     .program-card h4 {
-        color: #003366;
+        color: var(--primary-blue);
         font-size: 1.3rem;
         margin-bottom: 10px;
     }
@@ -333,7 +336,7 @@ include 'includes/header.php';
     }
 
     .info-card {
-        background: #E8F4F8;
+        background: var(--light-blue);
         padding: 20px;
         border-radius: 6px;
         text-align: center;
@@ -341,18 +344,18 @@ include 'includes/header.php';
 
     .info-card i {
         font-size: 2.5rem;
-        color: #0066CC;
+        color: var(--accent-blue);
         margin-bottom: 15px;
     }
 
     .info-card h4 {
-        color: #003366;
+        color: var(--primary-blue);
         margin-bottom: 10px;
     }
 
     .cta-button {
         display: inline-block;
-        background: #28A745;
+        background: var(--success-green);
         color: white;
         padding: 15px 40px;
         border-radius: 4px;
@@ -363,7 +366,7 @@ include 'includes/header.php';
     }
 
     .cta-button:hover {
-        background: #218838;
+        filter: brightness(0.9);
         transform: translateY(-2px);
     }
 
@@ -381,12 +384,12 @@ include 'includes/header.php';
     }
 
     table th {
-        background: #003366;
+        background: var(--primary-blue);
         color: white;
     }
 
     table tr:nth-child(even) {
-        background: #f5f5f5;
+        background: var(--light-gray);
     }
 </style>
 
